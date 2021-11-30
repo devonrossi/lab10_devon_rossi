@@ -1,0 +1,61 @@
+---
+title: "lab 10"
+author: "Devon Rossi"
+date: "11/30/2021"
+output: html_document
+---
+
+# Install Packages
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = TRUE)
+library(tidyverse)
+library(usethis)
+library(beepr) # Install
+library(praise) # Install
+library(cowsay) # Install
+library(paletteer) # Install
+library(sf) # Install
+library(janitor)
+```
+
+## beepr beeps
+
+Use the function `beep()` in beepr package to make an audio alert when your code is done running.
+
+```{r, eval = FALSE}
+for(i in rev(seq(1:9999))) {
+  
+  print(paste(i, "bottles of beer on the wall"))
+}
+
+beep(98)
+```
+
+## praise and cowsay
+
+Packages built with a single purpose: to be kind and fun.
+
+```{r}
+praise("${Exclamation}, ${EXCLAMATION} ...${exclamation}!!!!")
+
+praise("Holy ${creating}, Batman - this code is ${ADJECTIVE}!")
+```
+
+Use cowsay::say() to make a character say something to you.
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
